@@ -2,7 +2,10 @@
   "name": "@todo-ng-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:todo": "nx serve todo-ng-monorepo -o",
+    "serve:characters": "nx serve characters -o"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.3.0",
