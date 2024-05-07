@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "app",
   "sourceRoot": "apps/characters/src",
-  "tags": [],
+  "tags": ["type:feature", "scope:characters"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
