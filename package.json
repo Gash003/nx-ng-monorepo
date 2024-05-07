@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "serve:todo": "nx serve todo-ng-monorepo -o",
-    "serve:characters": "nx serve characters -o"
+    "serve:characters": "nx serve characters -o",
+    "test:ui-kit": "nx test ui-kit"
   },
   "private": true,
   "dependencies": {
