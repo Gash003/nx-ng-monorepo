@@ -1,13 +1,28 @@
+import { RouterTestingModule } from '@angular/router/testing';
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { RouterTestingModule } from '@angular/router/testing';
+import { appRoutes } from './app.routes';
+import { NxWelcomeComponent } from './components/nx-welcome.component';
+import { UnderlineHostComponent } from './components/underline-host.component';
+import { Router } from '@angular/router';
 
 describe('AppComponent', () => {
+  let router: Router;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, NxWelcomeComponent, RouterTestingModule],
+      imports: [
+        AppComponent,
+        NxWelcomeComponent,
+        UnderlineHostComponent,
+        RouterTestingModule.withRoutes(appRoutes),
+      ],
     }).compileComponents();
+  });
+  
+  beforeEach(() => {
+    router = TestBed.inject(Router);
+    router.initialNavigation();
   });
 
   it('should render title', () => {
