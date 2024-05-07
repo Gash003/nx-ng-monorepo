@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "nx run-many -t build",
     "serve:todo": "nx serve todo-ng-monorepo -o",
     "serve:characters": "nx serve characters -o",
     "test:ui-kit": "nx test ui-kit"

@@ -8,4 +8,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './underline.component.html',
   styleUrl: './underline.component.scss',
 })
-export class UnderlineComponent {}
+export class UnderlineComponent {
+  constructor() {
+    console.log( "Hello");
+  }
+}
